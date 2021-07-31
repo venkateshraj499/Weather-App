@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Finder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/home.css" rel="stylesheet">
+     </head>
+      <body class="text-center">
+        
+        <main class="form-signin">
+        <form action="/results" method="POST">
+            <img class="mb-4" src="icon.png" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 fw-normal">Please Enter your city name</h1>
+
+            <div class="form-floating">
+                <input type="text" name="city" class="form-control" id="floatingInput" placeholder="London">
+                <label for="floatingInput">City Name</label>
+            </div>
+            <br>
+   
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Get Weather</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Weather FInder</p>
+        </form>
+        </main>
+   
+  </body>
+</html>
